@@ -11,15 +11,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript" href="Scripts/validation.js"></script>
 
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="55">
     <!-- NavBar-->
 	    <nav class="navbar navbar-default fixed-top navbar-expand-md navbar-dark bg-dark">
-	    	<div class="container">
+	    	<div class="container ">
+	    		<div class="container row">
 				<a class="navbar-brand" href="#brand">Mohammed Salah</a>
-			    <ul class="navbar-nav ml-auto ">
+				<button class="navbar-toggler ml-auto" name="collapseable" type="button" data-toggle="collapse" data-target="#collapseItems" aria-controls="collapseItems" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			    <ul class="navbar-nav collapse ml-auto navbar-collapse" id="collapseItems">
 			     	<li class="nav-item">
 			       		<a class="nav-link" href="#about">About</a>
 			   		</li>
@@ -35,16 +39,16 @@
 			  		<li class="nav-item">
 			    		<a class="nav-link" href="#contact">Contact</a>
 		     		</li>
-		    	</ul>
-			 </div>
+		     	</ul>
+		     </div>
 		</nav>
 
 	<!-- Header -->
 		<div>
 			<header id="brand">
-				<div class="container">
+				<div class="container intro">
 					<img src="Images/profileImage.jpg" alt="Loading image failed...">
-					<div class="Intro">
+					<div class="">
 						<b>
 							<h1>Mohammed Salah</h1>
 							<hr>
@@ -153,23 +157,26 @@
 				<div class="container" style="padding-top:70px;padding-bottom:70px">
 					<h1>Contact</h1>
 					<br>
-					<form action="https://formspree.io/zacksalah73@gmail.com" method="POST" name="sentMessage" id="contactForm" class="needs-validation" novalidate>
+					<form action="//formspree.io/zacksalah73@gmail.com" method="POST" name="sentMessage" id="contactForm"  class="needs-validation" novalidate>
 						<div class="control-group">
 							<div class="col form-group">
 								<label class="sr-only" for="inlineFormInput">Name</label>
-						  		<input type="text" name="name" class="form-control" placeholder="Name" id="name" required="">
-						  		      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
+						  		<input type="text" name="name" class="form-control" placeholder="Name" id="name" max="30" required>
+						  		<div class="invalid-feedback">Please type in your name.</div>
 							</div>
 						    <div class="col form-group">
 						    	<label class="sr-only" for="inlineFormInput">Email</label>
-						    	<input type="text" name="_replyto" class="form-control" placeholder="Email" id="email" required="">
+						    	<input type="email" name="_replyto" class="form-control" placeholder="Email" id="email" required>
+						    	<div class="invalid-feedback">Please enter a valid email.</div>
+
 						    </div>
 						    <div class="col form-group">
 						    	<label class="sr-only" for="inlineFormInput">Message</label>
-						    	<textarea rows="6" name="message" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+						    	<textarea rows="6" name="message" class="form-control" placeholder="Message" id="message" required></textarea>
+						    	<div class="invalid-feedback">Please type in the message.</div>
+
 						    </div>
+
 						    <input type="hidden" name="_next" value="thanks.html" />
 						    <input type="hidden" name="_subject" value="Web Resume" />
 						    <input type="text" name="_gotcha"/>
@@ -183,7 +190,7 @@
 		 	</section>
 		 	<hr>
 		 	<br>
-
-		 </div> 
+		 </div>
+		 <script type="text/javascript" src="Scripts/validation.js"></script>
 	</body>
 </html>

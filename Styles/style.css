@@ -1,7 +1,8 @@
 .container {
 }
 .intro{
-
+	padding-top: 80px;
+	padding-bottom: 15px;
 }
 .formatTextL{
 	font-size: 140%;
@@ -17,6 +18,12 @@ button[aria-expanded="true"]:before{
 	content:"less details ";
 
 }
+button[name=collapseable]:before{
+	content: "";
+}
+.navbar-collapse {
+	align-items: flex-start !important;
+}
 section{
 	padding-top: 10%;
 	padding-bottom: 10%;
@@ -24,8 +31,8 @@ section{
 header{
 	text-align: center;
 	background-color: #1FB0A8;
-	padding-top: 6%;
-	padding-bottom: 4%;
+	padding-top: 3%;
+	padding-bottom: 2%;
 }
 
 img{
