@@ -8,21 +8,31 @@
 
 		<link rel="stylesheet" href="Styles/style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+		<title>Mohammed Salah</title>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="55">
     <!-- NavBar-->
 	    <nav class="navbar navbar-default fixed-top navbar-expand-md navbar-dark bg-dark">
-	    	<div class="container ">
+	    	<div class="container">
 	    		<div class="container row">
-				<a class="navbar-brand" href="#brand">Mohammed Salah</a>
-				<button class="navbar-toggler ml-auto" name="collapseable" type="button" data-toggle="collapse" data-target="#collapseItems" aria-controls="collapseItems" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				</button>
-			</div>
+	    			<div>
+						<a class="navbar-brand" href="#brand">Mohammed Salah</a>
+						<a href="http://bit.ly/MohammedSalahLinkedIn" target="_blank" class="btn btn-social-icon btn-linkedin">
+							<span class="fa fa-linkedin"></span>
+						</a>
+						<a href="http://bit.ly/MohammedSalahGitHub" target="_blank" class="btn btn-social-icon btn-github">
+				    		<span class="fa fa-github"></span>
+						</a>
+					</div>
+					<button class="navbar-toggler ml-auto" name="collapseable" type="button" data-toggle="collapse" data-target="#collapseItems" aria-controls="collapseItems" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
 			    <ul class="navbar-nav collapse ml-auto navbar-collapse" id="collapseItems">
 			     	<li class="nav-item">
 			       		<a class="nav-link" href="#about">About</a>
@@ -49,11 +59,9 @@
 				<div class="container intro">
 					<img src="Images/profileImage.jpg" alt="Loading image failed...">
 					<div class="">
-						<b>
-							<h1>Mohammed Salah</h1>
-							<hr>
-							<span>Recent Computer Science Graduate</span>
-						</b>
+						<h1>Mohammed Salah</h1>
+						<hr>
+						<span><b>Recent Computer Science Graduate</b></span>
 					</div>
 			    </div> 
 			</header>
@@ -65,7 +73,6 @@
 					</p>
 				</div>
 		 	</section>
-		 	<hr>
 		 	<section id="edu">
 				<div class="container">
 					<h1>Education</h1>
@@ -76,14 +83,13 @@
 			            	<div class="mb-3"><h5>Bachelor of Science</h5></div>
 			            	<div class="">
 			            		<span>Computer Science</span>
-			            		<p>GPA: 3.26</p>
+			            		<p>GPA: 3.26 / 4 </p>
 			            	</div>
 			        	</div>
 			          	<span class="formatTextM">June 2014 - March 2019</span>
 			        </div>
 				</div>
 		 	</section>
-		 	<hr>
 		 	<section id="projects">
 		    	<div class="container">
 		    		<h1>Projects</h1>
@@ -96,7 +102,7 @@
 				            	Participated in a team of five to build a multi-purpose data processing software for a virtual hospital from the ground up using C++98 and the Waterfall Development Process. Applied the OOP model and Data structure knowledge. Took charge of managing the team's workflow using git. Aided in writing unit tests for the application.
 				            </p>
 				            <p>Technologies: OOP concepts, waterfall development, continuous integration, Git, C++</p>
-				            <p><a class="btn btn-secondary" href="#" role="button">more details &#187;</a></p>
+				            <p><a class="btn btn-secondary" href="http://bit.ly/ChocAn" target="_blank" role="button">repository &#187;</a></p>
 		          		</div>
 		          		<div class="col-md-4">
 				            <h2>XV6 Operating System</h2>
@@ -105,7 +111,7 @@
 				            	Made modifications to the MIT XV6 operating system under compilation condition flags. Added System Calls and implementation for commands such as Setuid, Getuid, and Date. Modified commands like ls and Ctrl+P. Enhanced the security of files by implementing and adding Chmod, Chgrp, and Chown system calls. Improved the run time and efficiency by implementing MLFQ scheduling and Process State Transition.
 				            </p>
 							<p>Technologies: XV6, C</p>
-				            <p><a class="btn btn-secondary" href="#" role="button">more details &#187;</a></p>
+				            <p><a class="btn btn-secondary" href="http://bit.ly/XV6OperatingSystem" target="_blank" role="button">repository &#187;</a></p>
 		         		</div>
 		          		<div class="col-md-4">
 				            <h2>Phone Bill Application</h2>
@@ -114,7 +120,7 @@
 				            	Built a commercial phone billing application using Java and Maven. Used Travis Cl as a means for continuous integration. Applied Dependency Injection and Test-Driven Development throughout the development process. Built a web server that provides a REST-ful API with mapped CRUD operations and a client using HTTPServlet and HTTPClient. Improved the application security and runtime by utilizing the Google Web ToolKit RPC framework's serialization policies and the ability to move all the UI logic to the client which reduces web server load and bandwidth. Implemented a web-based user interface for the client using GWT UI.
 				            </p>
 							<p>Technologies: Maven, Java,  Servlet, GWT, Travis CI, and Git</p>
-				            <p><a class="btn btn-secondary" href="#" role="button">more details &#187;</a></p>
+				            <p><a class="btn btn-secondary" href="http://bit.ly/PhoneBillApp" target="_blank" role="button">repository &#187;</a></p>
 		          		</div>
 		          	</div>
 	          		<hr>
@@ -128,18 +134,15 @@
 			          		Participated as one of six to develop AI for Nike within 12 weeks. The AI is a clothing analyzer which can indicate the color, material, and style of clothing based on a photo. Used Python and TensorFlow to construct an AI agent using a convolutional neural network model. Took charge of building a mobile application using React Native for the frontend and Flask for the backend and connected the team inferences to the backend.
 			          	</p>
 						<p>Technologies: Tensorflow, Pytorch, Python, Pycharm, Keras, React Native, and Flask</p>
-						<p><a class="btn btn-secondary" href="#" role="button">more details &#187;</a></p>
-
+						<p><a class="btn btn-secondary" id="gitpages" href="http://bit.ly/KratosCNN" target="_blank" role="button">repository &#187;</a></p>
   	          		</div>	
 		      	</div>
 		 	</section>
-		 	<hr>
-		 	<br>
 		 	<section id="certs">
 				<div class="container" style="padding-top:70px;padding-bottom:70px">
 					<h1>Certification</h1>
 					<br>
-					<div class="row justify-content-between mb-5">
+					<div class="container row justify-content-between mb-5">
 						<h3>Misk/Tokai University - Electric Car Engineering Training Program</h3>
 						<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tokai" aria-expanded="false" aria-controls="tokai">&#187;</button>
 					</div>
@@ -157,21 +160,21 @@
 				<div class="container" style="padding-top:70px;padding-bottom:70px">
 					<h1>Contact</h1>
 					<br>
-					<form action="//formspree.io/zacksalah73@gmail.com" method="POST" name="sentMessage" id="contactForm"  class="needs-validation" novalidate>
+					<form action="//formspree.io/zacksalah73@gmail.com" method="POST" name="sentMessage" id="contactForm" class="needs-validation" novalidate>
 						<div class="control-group">
 							<div class="col form-group">
-								<label class="sr-only" for="inlineFormInput">Name</label>
-						  		<input type="text" name="name" class="form-control" placeholder="Name" id="name" max="30" required>
+								<label class="sr-only" >Name</label>
+						  		<input type="text" name="name" class="form-control" placeholder="Name" id="name" maxlength="30" required>
 						  		<div class="invalid-feedback">Please type in your name.</div>
 							</div>
 						    <div class="col form-group">
-						    	<label class="sr-only" for="inlineFormInput">Email</label>
+						    	<label class="sr-only">Email</label>
 						    	<input type="email" name="_replyto" class="form-control" placeholder="Email" id="email" required>
 						    	<div class="invalid-feedback">Please enter a valid email.</div>
 
 						    </div>
 						    <div class="col form-group">
-						    	<label class="sr-only" for="inlineFormInput">Message</label>
+						    	<label class="sr-only">Message</label>
 						    	<textarea rows="6" name="message" class="form-control" placeholder="Message" id="message" required></textarea>
 						    	<div class="invalid-feedback">Please type in the message.</div>
 
@@ -182,15 +185,20 @@
 						    <input type="text" name="_gotcha"/>
 							<br>
 							<div class="form-group col">
-								<button type="submit" class="btn btn-success btn-lg">Send</button>
+								<button type="submit"  class="btn btn-success btn-lg">Send</button>
 							</div>
 						</div>
 					</form>
 				</div>
 		 	</section>
-		 	<hr>
-		 	<br>
+		 	<footer>
+		 		<p class="container" id="copyright">
+					Copyright © Mohammed Salah 2019
+				</p>
+		 	</footer>
 		 </div>
-		 <script type="text/javascript" src="Scripts/validation.js"></script>
+		 <script src="Scripts/validation.js"></script>
+		 <script src="Scripts/links.js"></script>
+
 	</body>
 </html>

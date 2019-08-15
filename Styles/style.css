@@ -1,5 +1,4 @@
-.container {
-}
+/*Classes*/
 .intro{
 	padding-top: 80px;
 	padding-bottom: 15px;
@@ -10,6 +9,43 @@
 .formatTextM{
 	font-size: 120%;
 }
+.fa:before{
+	font-size: 150%;
+	color: white;
+}
+.fa{
+	margin-bottom: 50%;
+}
+.navbar-collapse {
+	align-items: flex-start !important;
+}
+.navbar-brand{
+	font-weight: bold;
+	font-size: 150% !important;
+}
+/*IDs*/
+#about{
+	background-color: #D2EFEE;
+
+}
+#edu{
+}
+#certs{
+}
+#projects{
+	padding-top: 3%;
+	padding-bottom: 2%;
+	background-color: #79D0CB;
+}
+#contact{
+	background-color: #A5DFDC;
+
+}
+#copyright{
+	text-align: center;
+	color: white;
+}
+/*Elements*/
 button[aria-expanded="false"]:before{
 	content:"more details ";
 
@@ -18,11 +54,11 @@ button[aria-expanded="true"]:before{
 	content:"less details ";
 
 }
+li{
+	font-size: 130%
+}
 button[name=collapseable]:before{
 	content: "";
-}
-.navbar-collapse {
-	align-items: flex-start !important;
 }
 section{
 	padding-top: 10%;
@@ -43,9 +79,7 @@ body{
 }
 h1{
 	text-align: center;
-
 }
-
 form-control{
 	color: #acb6c0;
     opacity: 1;
@@ -63,31 +97,8 @@ form{
 input[name=_gotcha]{
 	display: none;
 }
-.floating-label-form-group{
-	z-index: 1;
-	position: relative;
-	padding-right: 0;
-	padding-left: 0;
-	border: 0;
-	border-radius: 0;
-	font-size: 1.5em;
-	background: 0 0;
-	box-shadow: none !important;
-	resize: none;
-}
-#brand{
-
-}
-#about{
-	background-color: #D2EFEE;
-
-}
-#projects{
-	padding-top: 3%;
-	padding-bottom: 2%;
-	background-color: #79D0CB;
-}
-#contact{
-	/*background-color: #A5DFDC;*/
-
+footer{
+	padding-top: .8%;
+	padding-bottom: .3%;
+	background-color: #343A40;
 }
