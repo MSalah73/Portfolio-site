@@ -5,9 +5,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-
-		<link rel="stylesheet" href="Styles/style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Styles/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -16,25 +16,25 @@
 		<title>Mohammed Salah</title>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="55">
-    <!-- NavBar-->
-	    <nav class="navbar navbar-default fixed-top navbar-expand-md navbar-dark bg-dark">
-	    	<div class="container">
-	    		<div class="container row">
-	    			<div>
-						<a class="navbar-brand" href="#brand">Mohammed Salah</a>
-						<a href="http://bit.ly/MohammedSalahLinkedIn" target="_blank" class="btn btn-social-icon btn-linkedin">
-							<span class="fa fa-linkedin"></span>
-						</a>
-						<a href="http://bit.ly/MohammedSalahGitHub" target="_blank" class="btn btn-social-icon btn-github">
-				    		<span class="fa fa-github"></span>
-						</a>
-					</div>
-					<button class="navbar-toggler ml-auto" name="collapseable" type="button" data-toggle="collapse" data-target="#collapseItems" aria-controls="collapseItems" aria-expanded="false" aria-label="Toggle navigation">
-					    <span class="navbar-toggler-icon"></span>
-					</button>
-				</div>
-			    <ul class="navbar-nav collapse ml-auto navbar-collapse" id="collapseItems">
-			     	<li class="nav-item">
+
+ <!-- NavBar-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<div id="navdiv">
+			  	<a class="navbar-brand d-none d-sm-block" href="#brand">Mohammed Salah</a>
+				<a href="http://bit.ly/MohammedSalahLinkedIn" target="_blank" class="btn btn-social-icon btn-linkedin">
+					<span class="fa fa-linkedin"></span>
+				</a>
+				<a href="http://bit.ly/MohammedSalahGitHub" target="_blank" class="btn btn-social-icon btn-github">
+		    		<span class="fa fa-github"></span>
+				</a>		
+			</div>
+			<button class="navbar-toggler" type="button" name="collapseable" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav ml-auto">
+					<li class="nav-item">
 			       		<a class="nav-link" href="#about">About</a>
 			   		</li>
 		      		<li class="nav-item">
@@ -48,10 +48,11 @@
 		     		</li>
 			  		<li class="nav-item">
 			    		<a class="nav-link" href="#contact">Contact</a>
-		     		</li>
-		     	</ul>
-		     </div>
-		</nav>
+		     		</li>      
+			    </ul>
+		  	</div>
+	  	</div>
+	</nav>		
 
 	<!-- Header -->
 		<div>
@@ -95,32 +96,38 @@
 		    		<h1>Projects</h1>
 					<br>
 		        	<div class="row">
-		          		<div class="col-md-4">
-				            <h2>Choc-An Data Processing Software</h2>
-				            <br>
-				            <p>
-				            	Participated in a team of five to build a multi-purpose data processing software for a virtual hospital from the ground up using C++98 and the Waterfall Development Process. Applied the OOP model and Data structure knowledge. Took charge of managing the team's workflow using git. Aided in writing unit tests for the application.
-				            </p>
-				            <p>Technologies: OOP concepts, waterfall development, continuous integration, Git, C++</p>
-				            <p><a class="btn btn-secondary" href="http://bit.ly/ChocAn" target="_blank" role="button">repository &#187;</a></p>
+		          		<div class="col-md-4 d-flex flex-column">
+		          			<div>
+					            <h2>Choc-An Data Processing Software</h2>
+					            <br>
+					            <p>
+					            	Participated in a team of five to build a multi-purpose data processing software for a virtual hospital from the ground up using C++98 and the Waterfall Development Process. Applied the OOP model and Data structure knowledge. Took charge of managing the team's workflow using git. Aided in writing unit tests for the application.
+					            </p>
+					            <p>Technologies: OOP concepts, waterfall development, continuous integration, Git, C++</p>
+				        	</div>
+				            <p class="mt-auto"><a class="btn btn-secondary" href="http://bit.ly/ChocAn" target="_blank" role="button">repository &#187;</a></p>
 		          		</div>
-		          		<div class="col-md-4">
-				            <h2>XV6 Operating System</h2>
-				            <br>
-				            <p>
-				            	Made modifications to the MIT XV6 operating system under compilation condition flags. Added System Calls and implementation for commands such as Setuid, Getuid, and Date. Modified commands like ls and Ctrl+P. Enhanced the security of files by implementing and adding Chmod, Chgrp, and Chown system calls. Improved the run time and efficiency by implementing MLFQ scheduling and Process State Transition.
-				            </p>
-							<p>Technologies: XV6, C</p>
-				            <p><a class="btn btn-secondary" href="http://bit.ly/XV6OperatingSystem" target="_blank" role="button">repository &#187;</a></p>
+		          		<div class="col-md-4 d-flex flex-column">
+		          			<div>
+					            <h2>XV6 Operating System</h2>
+					            <br>
+					            <p>
+					            	Made modifications to the MIT XV6 operating system under compilation condition flags. Added System Calls and implementation for commands such as Setuid, Getuid, and Date. Modified commands like ls and Ctrl+P. Enhanced the security of files by implementing and adding Chmod, Chgrp, and Chown system calls. Improved the run time and efficiency by implementing MLFQ scheduling and Process State Transition.
+					            </p>
+								<p>Technologies: XV6, C</p>
+							</div>
+				            <p class="mt-auto"><a class="btn btn-secondary" href="http://bit.ly/XV6OperatingSystem" target="_blank" role="button">repository &#187;</a></p>
 		         		</div>
-		          		<div class="col-md-4">
-				            <h2>Phone Bill Application</h2>
-				            <br>
-				            <p>
-				            	Built a commercial phone billing application using Java and Maven. Used Travis Cl as a means for continuous integration. Applied Dependency Injection and Test-Driven Development throughout the development process. Built a web server that provides a REST-ful API with mapped CRUD operations and a client using HTTPServlet and HTTPClient. Improved the application security and runtime by utilizing the Google Web ToolKit RPC framework's serialization policies and the ability to move all the UI logic to the client which reduces web server load and bandwidth. Implemented a web-based user interface for the client using GWT UI.
-				            </p>
-							<p>Technologies: Maven, Java,  Servlet, GWT, Travis CI, and Git</p>
-				            <p><a class="btn btn-secondary" href="http://bit.ly/PhoneBillApp" target="_blank" role="button">repository &#187;</a></p>
+		          		<div class="col-md-4 d-flex flex-column">
+		          			<div>
+					            <h2>Phone Bill Application</h2>
+					            <br>
+					            <p>
+					            	Built a commercial phone billing application using Java and Maven. Used Travis Cl as a means for continuous integration. Applied Dependency Injection and Test-Driven Development throughout the development process. Built a web server that provides a REST-ful API with mapped CRUD operations and a client using HTTPServlet and HTTPClient. Improved the application security and runtime by utilizing the Google Web ToolKit RPC framework's serialization policies and the ability to move all the UI logic to the client which reduces web server load and bandwidth. Implemented a web-based user interface for the client using GWT UI.
+					            </p>
+								<p>Technologies: Maven, Java,  Servlet, GWT, Travis CI, and Git</p>
+							</div>
+				            <p class="mt-auto"><a class="btn btn-secondary" href="http://bit.ly/PhoneBillApp" target="_blank" role="button">repository &#187;</a></p>
 		          		</div>
 		          	</div>
 	          		<hr>
